@@ -104,9 +104,9 @@ void loop()
     Serial.println(incoming_byte);
     if (incoming_byte == 'T' || incoming_byte == 't'){
 		int reading = analogRead(sensorPin);
-		XBee.print("ID: ");
+		XBee.print("ID ");
 		XBee.print(device_id);
-		XBee.print(" VTMP1: ");
+		XBee.print(" VTMP1 ");
 		XBee.println(reading);
     }
     else {
